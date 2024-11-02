@@ -1,6 +1,8 @@
-**[antfu.me](https://antfu.me)**
+**[isYangs.cn](https://isyangs.cn)**
 
-my personal website
+My blog site, Fork from [Anthony Fu](https://github.com/antfu)'s [antfu.me](https://github.com/antfu/antfu.me).
+
+On the original basis of adding comments, friendly chain function, other features according to their own needs to modify.
 
 <br>
 
