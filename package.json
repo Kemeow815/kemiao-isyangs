@@ -7,8 +7,7 @@
     "dev": "vite --port 3333 --open",
     "preview": "vite preview",
     "redirects": "esno scripts/redirects.ts",
-    "lint": "eslint .",
-    "prepare": "simple-git-hooks"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@vueuse/core": "^11.1.0",
@@ -44,7 +43,6 @@
     "feed": "^4.2.2",
     "fs-extra": "^11.2.0",
     "gray-matter": "^4.0.3",
-    "lint-staged": "^15.2.10",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-github-alerts": "^0.3.0",
@@ -57,8 +55,6 @@
     "pnpm": "^9.12.3",
     "sharp": "0.32.6",
     "shiki": "^1.22.2",
-    "simple-git": "^3.27.0",
-    "simple-git-hooks": "^2.11.1",
     "typescript": "^5.6.3",
     "unocss": "^0.63.6",
     "unplugin-auto-import": "^0.18.3",
@@ -72,10 +68,9 @@
     "vite-ssg": "^0.23.8",
     "vite-svg-loader": "^5.1.0"
   },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
+  "pnpm": {
+    "patchedDependencies": {
+      "markdown-it-magic-link": "patches/markdown-it-magic-link.patch"
+    }
   }
 }
