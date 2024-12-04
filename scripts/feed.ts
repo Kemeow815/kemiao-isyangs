@@ -45,9 +45,6 @@ async function buildBlogFeed() {
           const raw = await fs.readFile(i, 'utf-8')
           const { data, content } = matter(raw)
 
-          if (data.lang !== 'en')
-            return
-
           const html = markdown.render(content)
             .replace('src="/', `src="${DOMAIN}/`)
 
