@@ -60,10 +60,10 @@ links:
       link: 'https://blog.kaixed.com'
       desc: '平安顺遂，喜乐无忧'
       logo: 'https://s3.qjqq.cn/49/660ff4a698da0.webp!color'
-    - name: '九九小筑'
-      link: 'https://www.lujiujiu.site/'
-      desc: '满地都是六便士，他却抬头看见了月亮。'
-      logo: 'https://www.lujiujiu.site/siteshot/siteshot.jpg'
+    - name: '简纸'
+      link: 'https://paper.ixor.me'
+      desc: '一张A4纸'
+      logo: 'https://q1.qlogo.cn/g?b=qq&nk=747945307&s=640'
 
   '生活':
     - name: '静若安然'
@@ -82,6 +82,7 @@ links:
       link: 'https://likaijian.com'
       desc: '留下瞬间，记录永恒'
       logo: 'https://q.qlogo.cn/headimg_dl?dst_uin=1527335101&spec=640'
+
 ---
 
 <!-- @layout-full-width -->
