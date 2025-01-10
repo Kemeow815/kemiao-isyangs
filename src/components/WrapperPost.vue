@@ -85,6 +85,9 @@ const ArtComponent = computed(() => {
 </script>
 
 <template>
+  <ClientOnly v-if="ArtComponent">
+    <component :is="ArtComponent" />
+  </ClientOnly>
   <div
     v-if="frontmatter.display ?? frontmatter.title"
     class="prose m-auto mb-8"
