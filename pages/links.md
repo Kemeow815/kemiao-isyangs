@@ -5,11 +5,7 @@ plum: true
 wrapperClass: 'text-center'
 comment: true
 links:
-  '社区/论坛/服务':
-    - name: 'LskyPro交流社区'
-      link: 'https://bbs.lskypro.com'
-      desc: '你还不会搭建吗？快来社区学习一下吧！'
-      logo: 'https://www.lsky.pro/assets/favicon.ico'
+  '社区/服务':
     - name: '无铭API'
       link: 'https://jkapi.com/'
       desc: '无铭API，专注于提供免费、稳定、高速API接口服务'
