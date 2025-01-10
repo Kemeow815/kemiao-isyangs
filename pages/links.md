@@ -7,7 +7,7 @@ comment: true
 links:
   '社区/论坛/服务':
     - name: 'LskyPro交流社区'
-      link: 'https://lskypro.com'
+      link: 'https://bbs.lskypro.com'
       desc: '你还不会搭建吗？快来社区学习一下吧！'
       logo: 'https://www.lsky.pro/assets/favicon.ico'
     - name: '无铭API'
