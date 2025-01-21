@@ -36,6 +36,9 @@ jobs:
         run: |
           ssh-keyscan ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
 
+      - name: Install rsync
+        run: sudo apt-get update && sudo apt-get install -y rsync
+
       - name: Deploy to Server
         env:
           HOST: ${{ secrets.DEPLOY_HOST }}
@@ -43,5 +46,4 @@ jobs:
           PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
           TARGET_DIR: /www/wwwroot/isyangs.cn
         run: |
-          sudo apt-get update && sudo apt-get install -y sshpass
-          sshpass -p "${PASSWORD}" rsync -avz ./dist/ $USER@$HOST:$TARGET_DIR
+          sshpass -p "${PASSWORD}" rsync -e "ssh -o StrictHostKeyChecking=no" -avz ./dist/ $USER@$HOST:$TARGET_DIR
