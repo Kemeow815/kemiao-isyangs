@@ -27,6 +27,11 @@ jobs:
         run: |
           pnpm run build
 
+      - name: Prepare SSH Environment
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+
       - name: Add Host to Known Hosts
         run: |
           ssh-keyscan ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
