@@ -27,53 +27,23 @@ jobs:
         run: |
           pnpm run build
 
-      - name: Prepare SSH Environment
-        run: |
-          mkdir -p ~/.ssh
-          chmod 700 ~/.ssh
+      - name: Copy files to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          password: ${{ secrets.DEPLOY_PASSWORD }}
+          source: 'dist/*'
+          target: /www/wwwroot/isyangs.cn
+          strip_components: 1
 
-      - name: Add Host to Known Hosts
-        run: |
-          ssh-keyscan ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
-          chmod 644 ~/.ssh/known_hosts
-
-      - name: Install and Verify Tools
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y rsync sshpass
-          rsync --version
-          which rsync
-          which sshpass
-
-      - name: Test Connection
-        env:
-          HOST: ${{ secrets.DEPLOY_HOST }}
-          USER: ${{ secrets.DEPLOY_USER }}
-          PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
-        run: |
-          echo "Testing SSH connection..."
-          sshpass -p "${PASSWORD}" ssh -o StrictHostKeyChecking=no $USER@$HOST "pwd"
-
-      - name: Deploy to Server
-        env:
-          HOST: ${{ secrets.DEPLOY_HOST }}
-          USER: ${{ secrets.DEPLOY_USER }}
-          PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
-          TARGET_DIR: /www/wwwroot/isyangs.cn
-        run: |
-          echo "Starting deployment..."
-          if [ ! -d "./dist" ]; then
-            echo "Error: dist directory not found"
-            exit 1
-          fi
-
-          # 主要部署命令
-          sshpass -p "${PASSWORD}" rsync -avz \
-            -e "ssh -o StrictHostKeyChecking=no -v" \
-            --progress \
-            ./dist/ \
-            $USER@$HOST:$TARGET_DIR
-
-          # 验证部署
-          echo "Verifying deployment..."
-          sshpass -p "${PASSWORD}" ssh -o StrictHostKeyChecking=no $USER@$HOST "ls -la $TARGET_DIR"
+      - name: Executing remote commands
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          password: ${{ secrets.DEPLOY_PASSWORD }}
+          script: |
+            cd /www/wwwroot/isyangs.cn
+            ls -la
+            echo "Deployment completed!"
