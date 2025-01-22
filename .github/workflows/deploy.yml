@@ -35,11 +35,24 @@ jobs:
       - name: Add Host to Known Hosts
         run: |
           ssh-keyscan ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
 
-      - name: Install rsync and sshpass
+      - name: Install and Verify Tools
         run: |
           sudo apt-get update
           sudo apt-get install -y rsync sshpass
+          rsync --version
+          which rsync
+          which sshpass
+
+      - name: Test Connection
+        env:
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+        run: |
+          echo "Testing SSH connection..."
+          sshpass -p "${PASSWORD}" ssh -o StrictHostKeyChecking=no $USER@$HOST "pwd"
 
       - name: Deploy to Server
         env:
@@ -48,4 +61,19 @@ jobs:
           PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
           TARGET_DIR: /www/wwwroot/isyangs.cn
         run: |
-          sshpass -p "${PASSWORD}" rsync -e "ssh -o StrictHostKeyChecking=no" -avz ./dist/ $USER@$HOST:$TARGET_DIR
+          echo "Starting deployment..."
+          if [ ! -d "./dist" ]; then
+            echo "Error: dist directory not found"
+            exit 1
+          fi
+
+          # 主要部署命令
+          sshpass -p "${PASSWORD}" rsync -avz \
+            -e "ssh -o StrictHostKeyChecking=no -v" \
+            --progress \
+            ./dist/ \
+            $USER@$HOST:$TARGET_DIR
+
+          # 验证部署
+          echo "Verifying deployment..."
+          sshpass -p "${PASSWORD}" ssh -o StrictHostKeyChecking=no $USER@$HOST "ls -la $TARGET_DIR"
