@@ -35,6 +35,7 @@ jobs:
           password: ${{ secrets.DEPLOY_PASSWORD }}
           source: 'dist/*'
           target: /www/wwwroot/isyangs.cn
+          rm: true
           strip_components: 1
 
       - name: Executing remote commands
