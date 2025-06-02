@@ -49,10 +49,10 @@ function slug(name: string) {
         <p class="font-bold text-18px">
           欢迎各位提交友链，请按照以下格式提交 <i class="i-twemoji-winking-face-with-tongue" />
         </p>
-        <pre class="overflow-auto"><code>name: 'isYangs Blog (站点名称)'</code>
-<code>link: 'https://isyangs.cn (站点链接)'</code>
-<code>desc: '一个前端Bug构造师的博客 (站点描述)'</code>
-<code>logo: 'https://7.isyangs.cn/8/655c9835780a0-8.jpg (站点图标)'</code></pre>
+        <pre class="overflow-auto"><code>name: '喵落阁 (站点名称)'</code>
+<code>link: 'https://blog-v3.kemeow.top (站点链接)'</code>
+<code>desc: '愿你看清一切真相后，依旧热爱你的家人和朋友。 (站点描述)'</code>
+<code>logo: 'https://cn.cravatar.com/avatar/1F6C8947D35A8186A1647009BA8BC5F2?size=256 (站点图标)'</code></pre>
       </blockquote>
     </div>
   </div>
@@ -82,5 +82,21 @@ function slug(name: string) {
 
 .links-grid a.item:hover {
   background: #88888811;
+}
+
+/* 确保代码块文字颜色在白天模式为深灰色 */
+.prose pre code {
+  color: #333 !important;
+}
+
+/* 修复深色模式支持 */
+:root.dark .prose pre code {
+  color: #fff !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose pre code {
+    color: #fff !important;
+  }
 }
 </style>

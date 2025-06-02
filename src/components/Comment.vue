@@ -7,7 +7,7 @@ function loadSecondScript() {
   const initScript = document.createElement('script')
   initScript.innerHTML = `
             twikoo.init({
-                envId: "https://com.isyangs.cn",
+                envId: "https://twikoo-isyang.314926.xyz",
                 el: '#twikoo-comment'
             });
         `

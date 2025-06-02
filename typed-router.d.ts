@@ -24,8 +24,15 @@ declare module 'vue-router/auto-routes' {
     '/links': RouteRecordInfo<'/links', '/links', Record<never, never>, Record<never, never>>,
     '/notes': RouteRecordInfo<'/notes', '/notes', Record<never, never>, Record<never, never>>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
-    '/posts/about-useDark': RouteRecordInfo<'/posts/about-useDark', '/posts/about-useDark', Record<never, never>, Record<never, never>>,
-    '/posts/upgrade-project-dependencies-faster': RouteRecordInfo<'/posts/upgrade-project-dependencies-faster', '/posts/upgrade-project-dependencies-faster', Record<never, never>, Record<never, never>>,
+    '/posts/git-tongbu': RouteRecordInfo<'/posts/git-tongbu', '/posts/git-tongbu', Record<never, never>, Record<never, never>>,
+    '/posts/markdown-biaotiyufa': RouteRecordInfo<'/posts/markdown-biaotiyufa', '/posts/markdown-biaotiyufa', Record<never, never>, Record<never, never>>,
+    '/posts/markdown-sulanbiao': RouteRecordInfo<'/posts/markdown-sulanbiao', '/posts/markdown-sulanbiao', Record<never, never>, Record<never, never>>,
+    '/posts/telegram-music': RouteRecordInfo<'/posts/telegram-music', '/posts/telegram-music', Record<never, never>, Record<never, never>>,
+    '/posts/tgtalk-deploy': RouteRecordInfo<'/posts/tgtalk-deploy', '/posts/tgtalk-deploy', Record<never, never>, Record<never, never>>,
+    '/posts/umami-deploy': RouteRecordInfo<'/posts/umami-deploy', '/posts/umami-deploy', Record<never, never>, Record<never, never>>,
+    '/posts/waline-deploy': RouteRecordInfo<'/posts/waline-deploy', '/posts/waline-deploy', Record<never, never>, Record<never, never>>,
+    '/posts/zyfx-drop': RouteRecordInfo<'/posts/zyfx-drop', '/posts/zyfx-drop', Record<never, never>, Record<never, never>>,
+    '/posts/zyfx-toolooz': RouteRecordInfo<'/posts/zyfx-toolooz', '/posts/zyfx-toolooz', Record<never, never>, Record<never, never>>,
     '/projects': RouteRecordInfo<'/projects', '/projects', Record<never, never>, Record<never, never>>,
   }
 }

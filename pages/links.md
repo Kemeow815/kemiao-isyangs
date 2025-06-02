@@ -1,5 +1,5 @@
 ---
-title: Links - isYangs
+title: Links - KeMiao
 display: 友链
 plum: true
 wrapperClass: 'text-center'
@@ -15,7 +15,7 @@ links:
       desc: '主机测评,云服务器评测,分享国内外VPS,网站服务器等最新信息'
       logo: 'https://7.isyangs.cn/1/66181edc8e922-1.png'
 
-  '技术':
+  '朋友':
     - name: '杜老师说'
       link: 'https://dusays.com/'
       desc: '师者，传道，授业，解惑！'
@@ -60,6 +60,10 @@ links:
       link: 'https://paper.ixor.me'
       desc: '一张A4纸'
       logo: 'https://q1.qlogo.cn/g?b=qq&nk=747945307&s=640'
+    - name: 'shenlyy'
+      link: 'https://blog.ykrazy.top/'
+      desc: '随手存个档～'
+      logo: 'https://blog.ykrazy.top/avatar.jpg'
 
   '生活':
     - name: '静若安然'

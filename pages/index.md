@@ -1,21 +1,84 @@
 ---
-title: isYangs
-description: isYangs Portfolio
+title: 喵落阁
+description: 克喵爱吃卤面 Portfolio
 art: random
 ---
 
-Hey，我是 isYangs，热爱写代码，但不会因为热爱把 `Ta` 变为工作。
+### Hello
 
-前端 {Vue} {TypeScript} {Vite} {UnoCSS} { ESLint } <br>
-桌面 { Electron } { SQLite} <br>
-协作 { Git } { GitHub } { 飞书 } { 腾讯会议 } <br>
-环境 { MacOS } { VSCode } { iTerm2 } { Node } { PNPM } <br>
+<div style="text-align: center; margin: 20px 0;">
+  <a href="https://blog-v3.kemeow.top/">
+    <img 
+      src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" 
+      alt="GIF Link" 
+      height="275" 
+      style="max-width: 100%; height: auto; display: inline-block;"
+    />
+  </a>
+</div>
 
-你可以 [从这里找到我的所有项目](/projects)，并且我还提供 {去图图床} 图片托管服务。你也可以把图片托管在这里。
+- 🔭 I’m currently studying in Nanjing
+- 🌱 Current learning content: Automation Technology and Applications, front-end (sub), etc
+- 💬 You can ask me some questions about resources。
+- 📫 How to contact my email or official account: kemiaofx@163.com
+- 🍉 Active Community：[BLOG](https://blog-v3.kemeow.top) | [Telegram](https://t.me/KemiaoJun) |  [X](https://x.com/kemiaosw/) 
 
-除了写代码之外，我还喜欢看动漫、做视频之类的，总是喜欢去研究一些我认为有趣的事情，如果碰巧你也在 QingDao，兴许我们可以一起出去玩呀。
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&&section=header&text=HI%20THERE!&fontSize=90&fontAlign=50&fontAlignY=30&desc=I%20AM%20KeMiao%20%F0%9F%91%8B&descAlign=50&descSize=30&descAlignY=60&animation=twinkling" />
+</p>
 
-可能有人会好奇我的这个博客是什么主题或者程序之类的，这个博客基于 {Anthony Fu|https://github.com/antfu/antfu.me} 大佬的博客开发的，在原有基础上增加了评论、友链功能，如果你也想使用可以在 {isYangs|https://github.com/isYangs/isyangs.cn} 的仓库中克隆下来使用。
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=25&pause=1000&center=true&vCenter=true&random=false&width=600&lines=Welcome+to+my+About+page!;I+am+KeMiao+obsessed+with+programming!" />
+</p>
+
+### 👋 个人简介 
+---
+[个人主页](https://kemiao.online) | [博客站点](https://blog-v3.kemeow.top)
+
+大家好！这里是克喵爱吃卤面的博客。致力于分享资源、生活日记和踩坑教程，代码水准一般，自动化专业大二学生，现于南京就读，普通的大学牛马。
+
+### 关于我
+
+---
+
+- 🖥 **个性:** 开朗活泼，热爱学习，勤奋工作
+- 🖥 **技能:** 自动化技术与应用
+- 🖥 **个人信息:**
+    - 🧑 **姓名:** mcy
+    - 🏫 **学校:** 南京工业职业技术大学，[官方网站](https://www.niit.edu.cn/)
+    - 🏛️ **年级:** 大二
+    - 👷 **职业:** 学生
+- 🖥 **兴趣:** 计算机，单机游戏，电子产品，数码产品，资源分享
+- 🖥 **梦想:** 咸鱼算不算？
+
+---
+
+### 📈 我的GitHub数据
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Kemeow815" alt="GitHub Stats" />
+</div>
+
+<p align="center">
+  <a>
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kemeow815&theme=github-compact&custom_title=Activity&radius=30&height=300" alt="Activity">
+  </a>
+</p>
+
+<div align="center">
+  <img 
+    src="https://github-immortality.vercel.app/api?username=Kemeow815" 
+    alt="修仙系列统计卡片" 
+    style="max-width: 100%; height: auto;" 
+  />
+</div>
+
+---
+
+### 赞助
+
+- 微信公众号：[克喵的小站](https://wechat.kemeow.top/)
+- 赞助页面: [点我](https://donate.kemeow.top/)
 
 <div flex-auto />
 
@@ -24,8 +87,10 @@ Hey，我是 isYangs，热爱写代码，但不会因为热爱把 `Ta` 变为工
 找到我
 
 <p flex="~ gap-2 wrap" class="mt--2!">
-  <a href="https://github.com/isYangs" target="_blank"><span op75 i-simple-icons-github /> GitHub</a>
-  <a href="mailto:hi@isyangs.cn" target="_blank"><span op75 i-mdi:email-multiple/> 发邮件给我</a>
+  <a href="https://github.com/Kemeow815" target="_blank"><span op75 i-simple-icons-github /> GitHub</a>
+  <a href="mailto:me@kemiaosw.top" target="_blank"><span op75 i-mdi:email-multiple /> 发邮件给我</a>
+  <a href="https://t.me/KemiaoJun" target="_blank"><span op75 i-simple-icons-telegram /> Telegram</a>
+  <a href="https://qm.qq.com/q/m8FW8Y6TkY" target="_blank"><span op75 i-arcticons-qq /> QQ</a>
   其他社交平台随缘
 </p>
 

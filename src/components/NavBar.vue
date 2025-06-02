@@ -14,8 +14,10 @@ const { y: scroll } = useWindowScroll()
     <RouterLink class="w-12 h-12 absolute xl:fixed m-5 select-none outline-none" to="/" focusable="false">
       <Logo />
     </RouterLink>
-    <button title="Scroll to top" fixed right-3 bottom-3 w-10 h-10 hover:op100 rounded-full hover-bg-hex-8883 transition
-      duration-300 z-100 print:hidden :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'" @click="toTop()">
+    <button
+      title="Scroll to top" fixed right-3 bottom-3 w-10 h-10 hover:op100 rounded-full hover-bg-hex-8883 transition
+      duration-300 z-100 print:hidden :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'" @click="toTop()"
+    >
       <div i-ri-arrow-up-line />
     </button>
     <nav class="nav">
@@ -33,10 +35,13 @@ const { y: scroll } = useWindowScroll()
           <span class="lt-md:hidden">友链</span>
           <div i-ri-links-line class="md:hidden" />
         </RouterLink>
-        <a href="https://afdian.com/a/isYangs" target="_blank" title="赞助" class="lt-md:hidden">
-          <div i-ph-hand-heart-bold />
+        <a href="https://t.me/KemiaoJun" target="_blank" title="Telegram" class="lt-md:hidden">
+          <div i-streamline-telegram />
         </a>
-        <a href="https://github.com/isYangs" target="_blank" title="GitHub" class="lt-md:hidden">
+        <a href="mailto:me@kemiaosw.top" target="_blank" title="邮箱" class="lt-md:hidden">
+          <div i-fontisto-email />
+        </a>
+        <a href="https://github.com/Kemeow815" target="_blank" title="GitHub" class="lt-md:hidden">
           <div i-ph-github-logo-bold />
         </a>
         <a href="/feed.xml" target="_blank" title="订阅源" class="lt-md:hidden">
@@ -67,7 +72,7 @@ const { y: scroll } = useWindowScroll()
   box-sizing: border-box;
 }
 
-.nav>* {
+.nav > * {
   margin: auto;
 }
 
@@ -95,7 +100,7 @@ const { y: scroll } = useWindowScroll()
   grid-auto-flow: column;
 }
 
-.nav .right>* {
+.nav .right > * {
   margin: auto;
 }
 </style>

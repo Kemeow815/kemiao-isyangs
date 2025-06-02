@@ -9,12 +9,12 @@ function slug(name: string) {
 <template>
   <div class="max-w-300 mx-auto">
     <p text-center mt--6 mb5 op50 text-lg>
-      由我开发或维护的项目
+      克喵部署的项目
     </p>
     <div class="prose pb5 mx-auto mt10 text-center">
       <div flex="~ gap-2 justify-center">
         <a
-          href="https://github.com/isYangs"
+          href="https://github.com/Kemeow815"
           target="_blank"
           class="group btn-blue inline-block"
         >
@@ -25,15 +25,15 @@ function slug(name: string) {
           GitHub
         </a>
         <a
-          href="https://7tu.top"
+          href="https://www.kemiao.online"
           target="_blank"
           class="group btn-amber inline-block"
         >
           <div
-            i-ph-image-square-duotone
-            group-hover="i-ph-image-square-fill text-amber"
+            i-tabler-home
+            group-hover="i-typcn-home text-amber"
           />
-          去图图床
+          克喵的主页
         </a>
       </div>
       <hr>

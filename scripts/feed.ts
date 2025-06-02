@@ -9,10 +9,10 @@ import MarkdownIt from 'markdown-it'
 // TODO: 减少配置冗余
 // TODO: 参考纸鹿的 Feed 生成逻辑重构
 // https://github.com/L33Z22L11/blog-v3/blob/main/server/routes/atom.xml.get.ts
-const DOMAIN = 'https://isyangs.cn'
+const DOMAIN = 'https://blog-v3.kemiaosw.top'
 const AUTHOR = {
-  name: 'isYangs',
-  email: 'hi@isyangs.cn',
+  name: '克喵爱吃卤面',
+  email: 'me@kemiaosw.top',
   link: DOMAIN,
 }
 const markdown = MarkdownIt({
@@ -29,13 +29,13 @@ async function buildBlogFeed() {
   const files = await fg('pages/posts/*.md')
 
   const options = {
-    title: 'isYangs',
-    description: 'isYangs Blog',
-    id: 'https://isyangs.cn/',
-    link: 'https://isyangs.cn/',
-    copyright: 'CC BY-NC-SA 4.0 2021 © isYangs',
+    title: '克喵爱吃卤面',
+    description: '喵落阁',
+    id: 'https://blog-v3.kemiaosw.top/',
+    link: 'https://blog-v3.kemiaosw.top/',
+    copyright: 'CC BY-NC-SA 4.0 2025 © 克喵爱吃卤面',
     feedLinks: {
-      atom: 'https://isyangs.cn/feed.xml',
+      atom: 'https://blog-v3.kemiaosw.top/feed.xml',
     },
   }
   const posts: any[] = (
@@ -69,8 +69,8 @@ async function buildBlogFeed() {
 
 async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
   options.author = AUTHOR
-  options.image = 'https://wsrv.nl/?url=github.com/isYangs.png'
-  options.favicon = 'https://wsrv.nl/?url=github.com/isYangs.png%3fsize=96&mask=circle'
+  options.image = 'https://wsrv.nl/?url=github.com/Kemeow815.png'
+  options.favicon = 'https://wsrv.nl/?url=github.com/Kemeow815.png%3fsize=96&mask=circle'
 
   const feed = new Feed(options)
 
