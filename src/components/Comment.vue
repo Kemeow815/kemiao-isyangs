@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const cdnScript: HTMLScriptElement = document.createElement('script')
-cdnScript.src = 'https://cdn.staticfile.org/twikoo/1.6.26/twikoo.all.min.js'
+cdnScript.src = 'https://source.kemiaofx.top/twikoo/twikoo.all.min.js'
 cdnScript.async = true
 
 function loadSecondScript() {
