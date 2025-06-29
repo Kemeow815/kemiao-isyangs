@@ -1,5 +1,5 @@
 ---
-title: Markdowm 换行语法
+title: Markdown 换行语法
 date: 2025-06-28T22:45:10.000Z
 lang: zh
 duration: 7min
