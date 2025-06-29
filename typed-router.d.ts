@@ -26,6 +26,8 @@ declare module 'vue-router/auto-routes' {
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/git-tongbu': RouteRecordInfo<'/posts/git-tongbu', '/posts/git-tongbu', Record<never, never>, Record<never, never>>,
     '/posts/markdown-biaotiyufa': RouteRecordInfo<'/posts/markdown-biaotiyufa', '/posts/markdown-biaotiyufa', Record<never, never>, Record<never, never>>,
+    '/posts/markdown-duanluo': RouteRecordInfo<'/posts/markdown-duanluo', '/posts/markdown-duanluo', Record<never, never>, Record<never, never>>,
+    '/posts/markdown-huanhang': RouteRecordInfo<'/posts/markdown-huanhang', '/posts/markdown-huanhang', Record<never, never>, Record<never, never>>,
     '/posts/markdown-sulanbiao': RouteRecordInfo<'/posts/markdown-sulanbiao', '/posts/markdown-sulanbiao', Record<never, never>, Record<never, never>>,
     '/posts/telegram-music': RouteRecordInfo<'/posts/telegram-music', '/posts/telegram-music', Record<never, never>, Record<never, never>>,
     '/posts/tgtalk-deploy': RouteRecordInfo<'/posts/tgtalk-deploy', '/posts/tgtalk-deploy', Record<never, never>, Record<never, never>>,
